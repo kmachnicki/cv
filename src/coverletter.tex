@@ -1,0 +1,62 @@
+%-------------------------------------------------------------------------------
+%	COVER LETTER
+%-------------------------------------------------------------------------------
+
+\input{configuration.tex}
+\input{personal-info.tex}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%-------------------------------------------------------------------------------
+
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Company Name\\Address 1\\Address 2}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Job Title}
+% How the letter is opened
+\letteropening{Dear Mr./Ms./Dr. LastName,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {}%{\today}
+  {Kamil Machnicki~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+About Me.
+
+\lettersection{Why Company?}
+Why Company?
+
+\lettersection{Why Me?}
+Why Me?
+
+\end{cvletter}
+
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
