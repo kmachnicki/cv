@@ -1,0 +1,231 @@
+%----------------------------------------------------------------------------------
+%	DOCUMENT SETUP
+%----------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % czcionki: 'sans', 'roman'
+
+\moderncvtheme[blue]{classic}
+% kolory: 'blue' (default), 'orange', 'red', 'green', 'grey', 'purple', 'black'
+% style: 'casual' (default), 'classic', 'oldstyle' and 'banking'}
+
+\usepackage[utf8]{inputenc}             % kodowanie dokumentu
+\usepackage[T1]{fontenc}                % kodowanie czcionki
+\usepackage{polski}                     % polski pakiet językowy
+\usepackage{verbatim}
+\usepackage[bottom,norule]{footmisc}
+\usepackage{textpos}
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPVertModule}{\paperheight}
+
+\usepackage[scale=0.8]{geometry}
+\recomputelengths
+
+\fancyfoot{} % wyczyszczenie stopki
+\fancyfoot[LE,RO]{\thepage} % numer strony na stopce
+\fancyfoot[RE,LO]{\footnotesize } % inne info na stopce
+%\setlength{\makecvtitlenamewidth}{10cm} % aby zapobiec łamaniu linii z imieniem
+
+%----------------------------------------------------------------------------------
+%	PERSONAL DATA
+%----------------------------------------------------------------------------------
+
+\firstname{Kamil}
+\familyname{Machnicki}
+\title{Curriculum Vitae}
+\address{}{Wrocław}{Poland}
+\mobile{(+48) 693 168 640}
+%\phone{<Phone number>}
+%\fax{<Fax number>}
+\email{kamil.machnicki@hotmail.com}
+%\extrainfo{
+%\httplink{http://pl.linkedin.com/in/kmachnicki}\\
+%\httplink{http://goldenline.pl/kamil-machnicki}\\
+%\httplink{}http://kmachnicki.elance.com}\\
+%kmachnicki
+\photo[94pt][0.4pt]{picture.jpg} % '94pt' wysokość zdjęcia, 0.4 szerokość ramki
+%\quote{"I have not failed. I've just found 10,000 ways that won't work." -- Thomas A. Edison}
+
+%\nopagenumbers{} % nie pokazywanie numerów stron dla krótkich CV
+
+%----------------------------------------------------------------------------------
+%	BEGIN CONTENT
+%----------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+%{\color{color2!50}\rule{\textwidth}{.25ex}}% % poziomy pasek
+
+%----------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%----------------------------------------------------------------------------------
+
+\section{Personal Information}
+\cvline{Birth}{\small May 18th, 1993 in Wrocław (Poland)\normalsize}
+\cvline{Citizenship}{\small Polish (EU Passport)\normalsize}
+\cvline{Driving Lic.}{\small Category B, issued in 2012 \normalsize}
+\cvline{LinkedIn}{\small \url{www.linkedin.com/in/kmachnicki}\normalsize}
+\cvline{GoldenLine}{\small \url{www.goldenline.pl/kamil-machnicki}\normalsize}
+\cvline{Elance}{\small \url{www.elance.com/s/kmachnicki/}\normalsize}
+%\cvline{Blog}{\small \url{<Link to profile>}\normalsize}
+%\cvline{Skype}{\small kmachnicki\normalsize}
+
+%----------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------
+
+\section{Experience}
+\cventry{Jul. 2015 - now}{JavaScript Working Student}{Nokia Networks}{Wrocław}{Poland}{Developing new functionality for the BTS in JavaScript}
+\cventry{Oct. 2014 - Jun. 2015}{C++ Working Student}{Nokia Networks}{Wrocław}{Poland}{Being a part of one of the SCRUM development teams, Cooperating with other development teams, software \& hardware testers, integration engineers, Developing new functionality for the BTS in C++, Writing unit \& module tests, Using Git as well as SVN for CI}
+\cventry{July 2014 - Sept. 2014}{Summer Trainee}{Nokia Solutions and Networks}{Wrocław}{Poland}{Being introduced to the company, Familiarization with the source code, Writing unit \& module tests, Code refactoring}
+
+%----------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------
+
+\section{Education}
+\cventry{2012-2017}{Bachelor's Degree}{University of Technology}{Wrocław}{Poland}{Computer Science of Electronics Department}
+\cventry{2009-2012}{Secondary School Certificate}{Piastów Śląskich II High School}{Wrocław}{Poland}{Class profile - Informatics}
+
+%----------------------------------------------------------------------------------
+%	MASTER THESIS
+%----------------------------------------------------------------------------------
+
+\begin{comment}
+\section{Master thesis}
+\cvline{title}{\emph{Title}}
+\cvline{supervisors}{Supervisors}
+\cvline{description}{\small Short thesis abstract}
+\end{comment}
+
+%----------------------------------------------------------------------------------
+%	QUALIFICATIONS AND COURSES
+%----------------------------------------------------------------------------------
+
+\section{Certifications and Courses}
+\cvline{2014}{\textbf{Practical Aspects of Software Development} by \emph{Nokia Solutions and Networks}.\newline \small{Course organized on Wrocław University of Technology covering advanced aspects of C++ programming (templates, threading, STL, Boost), code refactoring, software development techniques (Agile, SCRUM, Waterfall, TDD, Coding Dojo).}}
+\cvline{2013}{\href{https://s3.amazonaws.com/verify.edx.org/downloads/46169250d7b542c2829bce4b5f0096d4/Certificate.pdf}
+{\textbf{Introduction to Computer Science and Programming}} by \emph{edX}.\newline \small{Certificate for completion of an Online Course provided by 
+Massachusetts Institute of Technology.}}
+\newpage
+
+%----------------------------------------------------------------------------------
+%	DESIDERED EMPLOYMENT AND SKILLS
+%----------------------------------------------------------------------------------
+
+\section{Desidered employment and Skills}
+\cvline{}{\Large Software Developer, C/C++/JavaScript Programmer}
+\small 
+\cvline{}{I am a reliable and well-organized person, able to quickly adapt to the new environment and learn new technologies.}
+\cvline{}{I have knowledge of:}
+\cvlistitem{ Advanced C++ (templates, threading, code optimization, STL \& Boost)}
+\cvlistitem{ Intermediate JavaScript (Node.js)}
+\cvlistitem{ Testing Frameworks (Unit and Module Testing)}
+\cvlistitem{ Development Methodologies (TDD, Agile, SCRUM, Waterfall, Design Patterns, Coding Dojo)}
+\cvlistitem{ Revision Control Systems (Git, SVN)}
+\normalsize
+
+%----------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------
+
+\section{Computer Skills}
+\subsection{Programming Languages}
+\cvline{Basic}{\textsc{C\#}, \textsc{Java}, \small{\textsc{Bash}, \textsc{HTML}, \textsc{Assembler}}}
+\cvline{Intermediate}{\textsc{JavaScript}, \small{\textsc{Python}}}
+\cvline{Advanced}{\small{\textsc{C}, \textsc{C++}}}
+\subsection{Platforms}
+\cvline{}{Microsoft Windows \emph{(2000, XP, 7, 8)}, \newline GNU Linux \emph{(mainly Debian- and ArchLinux-based).}}
+\subsection{Tools and Programs}
+\cvline{}{Confluence, Jira, GitLab, WebStorm IDE, Eclipse IDE, MS Visual Studio, GNU Make, GNU Debugger, Git, Subversion, Qt Creator, Android SDK, Microsoft Office, LibreOffice.}
+
+%----------------------------------------------------------------------------------
+%	PERSONAL QUALITIES
+%----------------------------------------------------------------------------------
+
+\begin{comment}
+\section{Personal Qualities}
+\cvlistdoubleitem{Perfectionist}{Organised}
+\cvlistdoubleitem{Reliable}{Quick learner}
+\cvlistdoubleitem{Adaptable}{Ambitious}
+\end{comment}
+
+%----------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------
+
+\section{Foreign Languages}
+\hspace{25mm}\small Self-assessment European level \href{http://europass.cedefop.europa.eu/en/resources/european-language-levels-cefr}{CEFR} \normalsize
+\vspace{5mm}
+
+\begin{tabular}{p{67mm} p{40mm} p{40mm} p{20mm}}
+& \textbf{Understanding} & \textbf{Speaking} & \textbf{Writing} \\
+\end{tabular}
+
+\begin{tabular}{p{67mm} p{20mm} p{20mm} p{20mm} p{20mm} p{20mm}}
+& Listening & Reading & Interaction & Production & \\
+\end{tabular}
+
+\vspace{3mm}
+% A1 < A2 < B1 < B2 < C1 < C2
+\cvlanguage{Polish}{Mother Tongue}{}
+\cvlanguage{English}{Advanced}{
+	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+		C1 & C2 & C1 & C1 & C1
+	\end{tabular}}
+\cvlanguage{German}{Elementary}{
+	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+		B1 & B1 & A2 & A2 & A2
+	\end{tabular}}
+
+%----------------------------------------------------------------------------------
+%	INTERESTS AND HOBBIES
+%----------------------------------------------------------------------------------
+
+\section{Interests and Hobbies}
+\cvlistdoubleitem{New Technologies}{Computer Hardware \& Software}
+\cvlistdoubleitem{Programming}{Game Development}
+\cvlistdoubleitem{Computer Graphics}{Video Games}
+\cvlistdoubleitem{Polish History}{Military Warfare}
+\cvlistdoubleitem{Fantasy \& Science Fiction}{Astronomy}
+
+%----------------------------------------------------------------------------------
+%	EXTRA
+%----------------------------------------------------------------------------------
+
+\begin{comment}
+\section{Extra}
+\cvlistitem{I'm an active member of game programming academic circle \emph{\href{http://tkgames.pwr.wroc.pl/site/}{TKGames}}.}
+\cvlistitem{\small During the college me and my friend are creating a series of simple fun mini-games. We called ourselves Disassembly Entertainment.\\
+\small\href{http://dissent.c0.pl/}{Our temporary Internet site - www.DissEnt.c0.pl}}
+\end{comment}
+
+\closesection{}
+\renewcommand{\listitemsymbol}{-} % zmienia symbol dla list
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+\begin{comment}
+\clearpage
+\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+\date{January 01, 1984}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}
+\makelettertitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+\makeletterclosing
+\end{comment}
+
+%----------------------------------------------------------------------------------------
+%	ADDENDUM
+%----------------------------------------------------------------------------------------
+
+\begin{textblock}{0.73}[0.5,0.5](0.36,0.094)
+%\vfill
+\color{gray}\scriptsize{\emph{I hereby authorize Nokia Solutions and Networks, located in Warsaw 02-672, ul. Domaniewska 39a, to process the attached personal information strictly for the purposes of job recruitment pursuant to the Personal Data Protection Act of 29 August 1997 (Journal of Laws (Dz.U.) No. 133, item 883).}} \color{black}
+\end{textblock}
+\end{document}
