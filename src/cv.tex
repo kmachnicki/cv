@@ -2,33 +2,49 @@
 %	CURRICULUM VITAE
 %-------------------------------------------------------------------------------
 
+\def\fullcv{}
+
 \input{configuration.tex}
 \input{personal-info.tex}
 
+%-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
+% Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makecvheader
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {}%{\today}
-  {Kamil Machnicki~~~·~~~Curriculum Vitae} % Résumé
-  {}%{\thepage}
+  {\today}
+  {Kamil Machnicki~~~·~~~Curriculum Vitae}
+  {\thepage}
 
-%\input{cv/summary.tex}
-\input{cv/skills.tex}
-\input{cv/experience.tex}
-\input{cv/education.tex}
-%\input{cv/honors.tex}
-%\input{cv/languages.tex}
-\input{cv/courses.tex}
-\input{cv/projects.tex}
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\ifdefined\fullcv
+    \input{cv/summary.tex}
+    \input{cv/skills.tex}
+    \input{cv/experience.tex}
+    \input{cv/education.tex}
+    \newpage
+    \input{cv/extracurricular.tex}
+    \input{cv/presentation.tex}
+    \input{cv/certificates.tex}
+\else
+    \input{cv/skills.tex}
+    \input{cv/experience.tex}
+    \input{cv/education.tex}
+    \input{cv/extracurricular.tex}
+    \input{cv/certificates.tex}
+\fi
 
 \vfill
 \center{\color{lighttext}\scriptsize{\textit{I hereby authorize your company to process the attached personal information strictly for the purposes of job recruitment \\ pursuant to the Personal Data Protection Act of 29 August 1997, Journal of Laws No. 133, item 883.}}}
 \color{black}
 
+%-------------------------------------------------------------------------------
 \end{document}
